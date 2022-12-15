@@ -22,7 +22,7 @@ tasks.named('test') {
 }
 
 tasks.named("bootBuildImage") {
-    imageName = "private-registry.default.svc.cluster.local:5000/basic-springboot-276:${version}"
+    imageName.set("private-registry.default.svc.cluster.local:5000/${project.name}:${project.version}")
     publish = true
 //    docker {
 //        publishRegistry {
