@@ -21,8 +21,8 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-bootBuildImage {
-    imageName = private-registry.default.svc.cluster.local:5000/basic-springboot-276
+tasks.named("bootBuildImage") {
+    imageName = "private-registry.default.svc.cluster.local:5000/basic-springboot-276:${version}"
     publish = true
 //    docker {
 //        publishRegistry {
