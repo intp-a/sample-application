@@ -9,6 +9,6 @@ endpoints:
     exposure:
       include: info, health
 
-logging:
-  level:
-    root: DEBUG
+#logging:
+#  level:
+#    root: DEBUG
