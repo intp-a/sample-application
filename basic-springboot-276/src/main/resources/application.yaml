@@ -1,0 +1,7 @@
+springdoc:
+  version: v0.0.1
+
+endpoints:
+  web:
+    exposure:
+      include: info, health
