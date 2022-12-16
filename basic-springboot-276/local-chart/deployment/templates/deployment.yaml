@@ -60,24 +60,4 @@ spec:
         - containerPort: 8080
           name: http
           protocol: TCP
-        livenessProbe:
-          httpGet:
-            path: /actuator/health/liveness
-            port: 8080
-            scheme: HTTP
-          failureThreshold: 2
-          initialDelaySeconds: 60
-          periodSeconds: 20
-          successThreshold: 1
-          timeoutSeconds: 120
-        readinessProbe:
-          failureThreshold: 2
-          initialDelaySeconds: 60
-          periodSeconds: 20
-          successThreshold: 1
-          timeoutSeconds: 120
-          httpGet:
-            path: /actuator/health/readiness
-            port: 8080
-            scheme: HTTP
       terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
