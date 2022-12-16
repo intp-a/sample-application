@@ -5,7 +5,7 @@ image:
   pullPolicy: Always
 
 replicaCount: 1
-deployStrategy: Rolling
+deployStrategy: RollingUpdate
 terminationGracePeriodSeconds: 30
 
 #env: 
