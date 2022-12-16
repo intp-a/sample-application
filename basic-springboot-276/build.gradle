@@ -21,13 +21,13 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-tasks.named("bootBuildImage") {
-    imageName.set("private-registry.default.svc.cluster.local:5000/${project.name}:${project.version}")
-    publish = true
+//tasks.named("bootBuildImage") {
+//    imageName.set("private-registry.default.svc.cluster.local:5000/${project.name}:${project.version}")
+//    publish = true
 //    docker {
 //        publishRegistry {
 //            username = docker_id
 //            password = docker_pw
 //        }
 //    }
-}
+//}
