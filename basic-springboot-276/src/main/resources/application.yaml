@@ -8,3 +8,7 @@ endpoints:
   web:
     exposure:
       include: info, health
+
+logging:
+  level:
+    root: DEBUG
