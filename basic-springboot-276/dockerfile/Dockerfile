@@ -6,4 +6,4 @@ ENV JAVA_OPTS="-server -Xms128M -Xmx256M" \
 
 COPY basic-springboot-276/build/libs/ .
 
-CMD ["java", "$JAVA_OPTS", "$JAVA_OPTS_APPEND", "-jar", "*.jar"]
+CMD java $JAVA_OPTS $JAVA_OPTS_APPEND -jar *.jar
