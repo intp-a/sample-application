@@ -66,16 +66,16 @@ spec:
             port: 8080
             scheme: HTTP
           failureThreshold: 2
-          initialDelaySeconds: 20
-          periodSeconds: 10
+          initialDelaySeconds: 60
+          periodSeconds: 20
           successThreshold: 1
-          timeoutSeconds: 60
+          timeoutSeconds: 120
         readinessProbe:
           failureThreshold: 2
-          initialDelaySeconds: 20
-          periodSeconds: 10
+          initialDelaySeconds: 60
+          periodSeconds: 20
           successThreshold: 1
-          timeoutSeconds: 60
+          timeoutSeconds: 120
           httpGet:
             path: /actuator/health/readiness
             port: 8080
