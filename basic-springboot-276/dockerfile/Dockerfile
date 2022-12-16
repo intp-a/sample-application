@@ -4,6 +4,6 @@ MAINTAINER "gkim" <guardkim9@nate.com>
 ENV JAVA_OPTS="-server -Xms128M -Xmx256M" \
     JAVA_OPTS_APPEND="-XX:+UseG1GC"
 
-COPY basic-springboot-276/build/lib/ .
+COPY basic-springboot-276/build/libs/ .
 
 CMD ["java", "$JAVA_OPTS", "$JAVA_OPTS_APPEND", "-jar", "*.jar"]

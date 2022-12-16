@@ -21,6 +21,10 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+jar {
+	enabled = false
+}
+
 //tasks.named("bootBuildImage") {
 //    imageName.set("private-registry.default.svc.cluster.local:5000/${project.name}:${project.version}")
 //    publish = true
