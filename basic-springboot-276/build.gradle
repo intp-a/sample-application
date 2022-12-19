@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.gkim'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 sourceCompatibility = '11'
 
 repositories {
@@ -27,14 +27,3 @@ tasks.named('test') {
 jar {
 	enabled = false
 }
-
-//tasks.named("bootBuildImage") {
-//    imageName.set("private-registry.default.svc.cluster.local:5000/${project.name}:${project.version}")
-//    publish = true
-//    docker {
-//        publishRegistry {
-//            username = docker_id
-//            password = docker_pw
-//        }
-//    }
-//}
